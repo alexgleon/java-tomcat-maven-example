@@ -9,7 +9,7 @@ pipeline {
         stage ('Build') {
             steps {
                 /*For Mac & Linux machine */
-                sh  'mvn clean package'
+                sh  'mvn clean --file *.pom package'
             }
 
             post{
