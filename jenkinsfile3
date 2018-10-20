@@ -9,7 +9,7 @@ pipeline {
         stage ('Build') {
             steps {
                 /*For Mac & Linux machine */
-                sh  'mvn clean --file /home/user1/java-tomcat-maven-example/*.pom package'
+                sh  'mvn clean --file /home/user1/java-tomcat-maven-example/pom.xml package'
             }
 
             post{
